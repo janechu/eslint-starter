@@ -1,0 +1,32 @@
+{
+  "name": "eslint-plugin-starter",
+  "version": "1.0.0",
+  "description": "A ESLint repository starter",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:cjs",
+    "build:cjs": "tsc -p ./tsconfig.cjs.json",
+    "test": "npm run build && playwright test --project=chromium"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janechu/eslint-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janechu/eslint-starter/issues"
+  },
+  "homepage": "https://github.com/janechu/eslint-starter#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1",
+    "@types/eslint": "^8.4.7",
+    "@types/estree": "^1.0.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "@typescript-eslint/typescript-estree": "^5.41.0",
+    "eslint": "^8.26.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  }
+}

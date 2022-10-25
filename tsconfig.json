@@ -1,0 +1,5 @@
+{
+    "extends": "./tsconfig.cjs.json",
+    "include": ["src/**/*.ts"],
+    "exclude": ["src/**/*.invalid.ts", "src/**/*.valid.ts", "src/**/*.spec.ts"]
+}
